@@ -1,0 +1,97 @@
+.contest-card-item {
+  background-color: #1f1f30; /* Darker card background */
+  border: 1px solid #303040;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* No specific hover needed here if using framer-motion whileHover */
+
+.contest-card-header {
+  display: flex;
+  align-items: flex-start; /* Align icon and title nicely */
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.platform-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border-radius: 4px;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+.platform-icon-default {
+  color: #707080;
+  flex-shrink: 0;
+}
+
+.contest-title {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.3;
+  flex-grow: 1; /* Allow title to take space */
+}
+
+.favorite-btn {
+  background: none;
+  border: none;
+  color: #707080; /* Neutral color for non-favorited */
+  cursor: pointer;
+  padding: 0.25rem;
+  margin-left: auto; /* Push to the right */
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.favorite-btn:hover {
+  color: #ffc107; /* Gold on hover */
+  transform: scale(1.15);
+}
+
+.favorite-btn.favorited svg {
+  fill: #ffc107; /* Filled star for favorited */
+  color: #ffc107;
+}
+
+.contest-platform,
+.contest-time,
+.contest-duration {
+  font-size: 0.9rem;
+  color: #a0a0b0; /* Softer text for details */
+  margin-bottom: 0.4rem;
+}
+
+.contest-platform strong,
+.contest-time strong,
+.contest-duration strong {
+  color: #c0c0d0; /* Slightly brighter labels */
+  font-weight: 500;
+}
+
+.contest-card-actions {
+  margin-top: auto; /* Push actions to the bottom */
+  padding-top: 1rem;
+  border-top: 1px solid #303040;
+  display: flex;
+  justify-content: space-between; /* Or 'flex-end' with gap */
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap; /* Allow buttons to wrap on small cards */
+}
+
+.contest-card-actions .btn {
+  flex-grow: 1; /* Allow buttons to share space */
+  min-width: 120px; /* Ensure buttons have some minimum width */
+  padding: 0.5rem 0.8rem;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+

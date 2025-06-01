@@ -1,0 +1,47 @@
+.contests-page-main {
+  /* Uses .container class for width and basic padding from App.css */
+}
+
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  color: #a0a0b0;
+  font-size: 1.2rem;
+}
+
+.spinner-icon {
+  animation: spin 1.5s linear infinite;
+  margin-bottom: 1rem;
+  color: #4e8cff; /* Accent color for spinner */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.no-contests {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #a0a0b0;
+  padding: 2rem;
+  background-color: #1f1f30;
+  border-radius: 8px;
+  border: 1px solid #303040;
+}
+
+.contests-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem; /* Consistent gap */
+}
+
+/* Media query for responsiveness if needed */
+@media (max-width: 600px) {
+  .contests-grid-layout {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+}
