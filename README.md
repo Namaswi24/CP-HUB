@@ -40,7 +40,7 @@ CP Practice Portal is a customized competitive programming practice website desi
 ## 📁 Folder Structure
 
 The project is organized into two main directories: `backend_` and `front_end`.
-
+```
 ### Backend (`backend_`)
 backend_/
 ├── config/             # Configuration files (e.g., database, environment variables)
@@ -54,7 +54,8 @@ backend_/
 ├── package.json
 ├── server.js           # Main entry point for the backend server
 └── yarn.lock
-
+```
+```
 ### Frontend (`front_end`)
 front_end/
 ├── public/
@@ -73,7 +74,7 @@ front_end/
 ├── package-lock.json
 ├── package.json
 └── yarn.lock
-
+```
 ---
 
 ## ⚙️ Setup and Installation
