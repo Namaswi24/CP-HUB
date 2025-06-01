@@ -27,9 +27,9 @@ CP Practice Portal is a customized competitive programming practice website desi
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** React.js (evident from `App.jsx`, `components`, `pages`, `context` folders)
-* **Backend:** Node.js, Express.js (inferred from `server.js`, `routes`, `controllers`, `middleware` folders)
-* **Database:** (A NoSQL or SQL database would be used with the backend, e.g., MongoDB with Mongoose, or PostgreSQL with Sequelize, based on the `models` folder)
+* **Frontend:** React.js 
+* **Backend:** Node.js, Express.js 
+* **Database:** MongoDB with Mongoose
 * **APIs:**
     * Clist.by API (for contest aggregation)
     * Official APIs from Codeforces, AtCoder, LeetCode, CodeChef, GeeksForGeeks (where available)
